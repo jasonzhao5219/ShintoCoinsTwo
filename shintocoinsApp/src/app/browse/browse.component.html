@@ -1,0 +1,7 @@
+<h1>Browse The Ledger</h1>
+<p>Here You can Browse all the Shinto Coins Transaction</p>
+	<h5>Action     Amount      Value</h5>
+  <div *ngFor="let transction of tempTransctions">{{transction.action}}---{{transction.amount}}----{{transction.value}}<form (submit)="detailsubmit(transction.id)"><input type="submit" name="" value="detail"></form> </div>
+  	
+  
+ 
